@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pan" prefHeight="100.0" prefWidth="340.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ListSingleLayout">
+   <children>
+      <Circle fx:id="imageCircle" fill="#cccccc" layoutX="50.0" layoutY="50.0" radius="40.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Label fx:id="name" layoutX="104.0" layoutY="20.0" maxWidth="229.0" prefHeight="33.0" prefWidth="229.0" style="-fx-background-color: #eaeaea; -fx-padding: 4;" text="Abu Wasif" textFill="#0090ff">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label fx:id="designation" layoutX="104.0" layoutY="54.0" maxWidth="229.0" prefHeight="33.0" prefWidth="229.0" style="-fx-padding: 4;" text="Professor" textFill="#ff6900">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Line endX="263.0" endY="0.5" layoutX="77.0" layoutY="100.0" startX="-77.00001525878906" startY="0.5" stroke="#dddddd" strokeWidth="3.0" />
+      <Line endX="-10.000015258789062" endY="80.0" layoutX="10.0" layoutY="20.0" startX="-10.0" startY="-20.0" stroke="#dddddd" strokeWidth="4.0" />
+      <Line endX="322.0" endY="68.5" layoutX="20.0" layoutY="30.0" startX="322.0" startY="-29.999996185302734" stroke="#dddddd" strokeWidth="4.0" />
+   </children>
+</AnchorPane>

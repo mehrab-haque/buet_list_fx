@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="60.0" prefWidth="360.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BottomLayout">
+   <children>
+      <TextField fx:id="txt" layoutX="14.0" layoutY="18.0" prefHeight="25.0" prefWidth="234.0" />
+      <Button layoutX="264.0" layoutY="18.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="81.0" text="Fetch List" />
+   </children>
+</AnchorPane>
