@@ -15,6 +15,7 @@ public class MainScreen {
     public static final int HEIGHT=600;
     public MainScreen(Stage stage) throws IOException {
         this.stage=stage;
+        stage.setResizable(false);
         stage.setTitle("BUET CSE Faculty List");
         mainGroup=new Group();
         Parent bottomLayout = FXMLLoader.load(getClass().getResource("bottom_layout.fxml"));

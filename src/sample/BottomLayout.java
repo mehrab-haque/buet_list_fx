@@ -11,7 +11,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
+import java.net.InetAddress;
 import java.net.URL;
+import java.net.UnknownHostException;
 import java.util.Observable;
 import java.util.Observer;
 import java.util.ResourceBundle;
@@ -74,6 +76,13 @@ public class BottomLayout implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        InetAddress localhost= null;
+        try {
+            localhost = InetAddress.getLocalHost();
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+        System.out.println("System ip address :"+localhost);
         jsonArray=new JSONArray();
         timer=new AnimationTimer() {
             @Override
