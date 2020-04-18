@@ -4,6 +4,7 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
@@ -11,8 +12,11 @@ import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
 
 import java.awt.event.ActionEvent;
+import java.io.File;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class ListSingleLayout {
+public class ListSingleLayout implements Initializable {
     @FXML private Circle imageCircle;
     @FXML private Label name;
     @FXML private Label designation;
@@ -42,5 +46,13 @@ public class ListSingleLayout {
     }
     public void setDesignation(String string){
         designation.setText(string);
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        File file = new File("src/resources/avatar.png");
+        Image image = new Image(file.toURI().toString());
+        ImagePattern imagePattern=new ImagePattern(image);
+        imageCircle.setFill(imagePattern);
     }
 }

@@ -20,6 +20,7 @@ public class MainScreen {
         Parent bottomLayout = FXMLLoader.load(getClass().getResource("bottom_layout.fxml"));
         bottomLayout.setLayoutY(HEIGHT-60);
         mainGroup.getChildren().add(bottomLayout);
+
         Scene scene=new Scene(mainGroup,WIDTH,HEIGHT);
         stage.setScene(scene);
     }
